@@ -10,7 +10,7 @@ public class Triangulos {
             System.out.println("Ingrese la medida del tercer lado: ");
             double l3 = sc.nextDouble();
 
-            if (l1 + l2 + l3 == 180) {
+            if (l1<(l2+l3) && l2<(l1+l3) && l3<(l2+l1)) {
                 System.out.println("Es un triangulo valido");
                 if (l1 == l2 && l2 == l3) {
                     System.out.println("Triangulo equilatero.");
